@@ -1,0 +1,79 @@
+import React from 'react'
+import "../css/contact.css";
+
+const Contact = () => {
+  return (
+    <div className='contact-footer-wrapper'>
+     <section id='contact' className="contact-section">
+  <div className="contact-wrapper">
+    {/* Social Icons Section */}
+
+    <div className="contact-icons">
+  <h3>Connect with Me</h3>
+  <p className="contact-description">
+    Find me on any of my socials. You can also check out the source code for my projects.
+  </p>
+  
+  <div className="icon-row slide-in-left animate-on-scroll delay-1">
+    <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer" title="Instagram">
+      <i className="fab fa-instagram"></i>
+    </a>
+    <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+      <i className="fab fa-linkedin"></i>
+    </a>
+    <a href="mailto:yourmail@gmail.com" title="Email">
+      <i className="fas fa-envelope"></i>
+    </a>
+    <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" title="GitHub">
+      <i className="fab fa-github"></i>
+    </a>
+    <a href="https://wa.me/yourwhatsappnumber" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+      <i className="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://discord.com/users/yourdiscordid" target="_blank" rel="noopener noreferrer" title="Discord">
+      <i className="fab fa-discord"></i>
+    </a>
+  </div>
+</div>
+
+
+    {/* Contact Form Section */}
+    <form className="contact-form slide-in-right animate-on-scroll delay-1">
+  <h3>Send a Message</h3>
+  <div className="mb-3 floating-label">
+  <input type="text" className="form-control" placeholder=" " required />
+  <label>Name</label>
+</div>
+<div className="mb-3 floating-label">
+  <input type="email" className="form-control" placeholder=" " required />
+  <label>Email</label>
+</div>
+<div className="mb-3 floating-label">
+  <textarea className="form-control" rows="5" placeholder=" " required></textarea>
+  <label>Message</label>
+</div>
+  <button type="submit" className="btn btn-primary btn-pulse">Send</button>
+</form>
+  </div>
+</section>
+ <footer className="site-footer footer">
+      <div className="footer-content">
+        <p>&copy; {new Date().getFullYear()} Peter Ojo. All rights reserved.</p>
+        {/* <div className="footer-links">
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:yourmail@gmail.com">
+            <i className="fas fa-envelope"></i>
+          </a>
+        </div> */}
+      </div>
+    </footer>
+</div>
+  )
+}
+
+export default Contact

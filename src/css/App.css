@@ -1,0 +1,30 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+section {
+  width: 100vw;
+  padding: 4rem 2rem;
+  overflow: hidden;
+}
+
+.home-section, .about-section,
+.projects-section, .contact section {
+  background: #2c2c2c !important; 
+}
+
+
