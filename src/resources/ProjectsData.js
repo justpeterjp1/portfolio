@@ -1,8 +1,16 @@
+import img1 from '../assets/Images/project4.png';
+import img2 from '../assets/Images/Project3.png';
+import img3 from '../assets/Images/project2.png';
+import img4 from '../assets/Images/project1.png';
+import img5 from '../assets/Images/project5.png';
+
+
+
 const projectsData = [
   {
     id: 1,
     title: "TaskNest",
-    img: "/src/assets/Images/project4.png",
+    img: img1,
     desc: "A modern task management web app with real-time updates and collaborative features.",
     details: `TaskNest is a productivity platform that lets users organize, prioritize, and collaborate on tasks. Built with React, it features smooth animations and modular components for scalability.`,
     tools: ["React", "CSS3", "Tailwind", "Mongodb"],
@@ -14,7 +22,7 @@ const projectsData = [
   {
     id: 2,
     title: "DocuConvert",
-    img: "../src/assets/Images/Project3.png",
+    img: img2,
     desc: "A lightweight document converter that transforms files between PDF, DOCX, and TXT formats.",
     details: `DocuConvert simplifies file management by allowing you to convert and download between multiple document formats. Future updates include backend processing with Node.js.`,
     tools: ["Javascript", "Bootstrap", "HTML5", "Firebase", "NodeJS", "Express"],
@@ -27,7 +35,7 @@ const projectsData = [
   {
     id: 3,
     title: "A4 Furnitures",
-    img: "../src/assets/Images/project2.png",
+    img: img3,
     desc: "A sleek static site showcasing A4 Furnitures’ catalogue with a minimal UI and smooth animations.",
     details: `A fully responsive product showcase website with clean design, subtle motion, and optimized performance.`,
     tools: ["HTML", "CSS", "JavaScript", "Express"],
@@ -40,7 +48,7 @@ const projectsData = [
   {
     id: 4,
     title: "Assembly Game",
-    img: "../src/assets/Images/project1.png",
+    img: img4,
     desc: "A fun logic-based browser game built in JavaScript to test your assembly and problem-solving skills.",
     details: `The Assembly Game challenges users to build logical instructions and sequences. Designed for fun learning and retro vibes.`,
     tools: ["React", "HTML"],
@@ -52,7 +60,7 @@ const projectsData = [
   {
   id: 5,
   title: "Movie Compass",
-  img: "../src/assets/Images/project5.png",
+  img: img5,
   desc: "A dynamic movie tracking app that lets users discover, save, and manage their favorite films effortlessly.",
   details: `Movie Compass is an intuitive React-based web app that allows users to search, track, and organize movies they’ve watched or plan to watch. It features responsive design, API integration, and local state management for persistence.`,
   tools: ["React", "JavaScript", "CSS3"],
