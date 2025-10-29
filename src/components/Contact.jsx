@@ -1,7 +1,56 @@
 import React from 'react'
 import "../css/contact.css";
 
+
 const Contact = () => {
+  const [formData, setFormData] = React.useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [status, setStatus] = React.useState("");
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("Sending...");
+
+    try {
+      const response = await fetch("http://localhost:5000/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setStatus("Message sent successfully!... I'll respond back as soon as possible.");
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+        });
+      } else {
+        setStatus(data.message || "Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setStatus("Something went wrong. Please try again.");
+    }
+  };
+
+  
+
   return (
     <div className='contact-footer-wrapper'>
      <section id='contact' className="contact-section">
@@ -38,21 +87,31 @@ const Contact = () => {
 
 
     {/* Contact Form Section */}
-    <form className="contact-form slide-in-right animate-on-scroll delay-1">
+    <form onSubmit={handleSubmit} className="contact-form slide-in-right animate-on-scroll delay-1">
   <h3>Send a Message</h3>
   <div className="mb-3 floating-label">
-  <input type="text" className="form-control" placeholder=" " required />
+  <input
+    value={formData.name}
+    onChange={handleChange}
+   type="text" name='name' className="form-control" placeholder=" " required />
   <label>Name</label>
 </div>
 <div className="mb-3 floating-label">
-  <input type="email" className="form-control" placeholder=" " required />
+  <input
+  value={formData.email}
+    onChange={handleChange} 
+  type="email" name='email' className="form-control" placeholder=" " required />
   <label>Email</label>
 </div>
 <div className="mb-3 floating-label">
-  <textarea className="form-control" rows="5" placeholder=" " required></textarea>
+  <textarea 
+  value={formData.message}
+  onChange={handleChange}
+  name='message' className="form-control" rows="5" placeholder=" " required></textarea>
   <label>Message</label>
 </div>
   <button type="submit" className="btn btn-primary btn-pulse">Send</button>
+   {status && <p className="mt-3 text-sm text-gray-600">{status}</p>}
 </form>
   </div>
 </section>
