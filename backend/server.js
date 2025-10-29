@@ -10,7 +10,10 @@ const app = express();
 
 // =====  Security Middlewares  =====
 app.use(helmet());
-app.use(cors());
+ app.use(cors({
+  origin: ["https://portfolio-y1ms.onrender.com", "http://localhost:5173"],
+  methods: ["POST"],
+}));
 app.use(express.json());
 
 // =====  Rate Limiter  =====
