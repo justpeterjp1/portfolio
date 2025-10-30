@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar';
+import NavSection from './components/NavSection';
 import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
@@ -46,6 +47,7 @@ useAnimateOnScroll();
                   contact: () => scrollToSection(contactRef)
                 }} 
               />
+              {/* <NavSection /> */}
               <div ref={homeRef}><Home /></div>
               <div ref={aboutRef}><About /></div>
               <div ref={projectsRef}><Projects /></div>
