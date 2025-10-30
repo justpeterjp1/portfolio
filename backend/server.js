@@ -8,34 +8,31 @@ import contactRoutes from "./routes/contact.js";
 dotenv.config();
 const app = express();
 
-// =====  Security Middlewares  =====
-app.use(helmet());
+app.set("trust proxy", 1);
+
+// ✅ Always first: JSON + CORS
+app.use(express.json());
 app.use(
   cors({
-    origin: "https://jp-portfolio-iota.vercel.app", // your frontend URL
+    origin: "https://jp-portfolio-iota.vercel.app",
     methods: ["GET", "POST"],
   })
 );
-app.use(express.json());
 
-// =====  Rate Limiter  =====
+// Security middlewares
+app.use(helmet());
+
+// Rate limiter (apply globally)
 const limiter = rateLimit({
-    windowMs: 2 * 60 * 1000, // 2 minutes
-    max: 10, // limit each IP to 100 requests per windowMs
+  windowMs: 2 * 60 * 1000,
+  max: 10,
 });
-app.use("/api/contact", limiter);
+app.use(limiter);
 
-const PORT = process.env.port || 5000;
-
-// =====  Base Route  =====
-app.get("/", (req, res) => {
-    res.send("API is running...");
-});
-
-// =====  Routes  =====
+// Routes
+app.get("/", (req, res) => res.send("API is running..."));
 app.use("/api/contact", contactRoutes);
 
-// =====  Start Server  =====
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-});
+// Start server
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
