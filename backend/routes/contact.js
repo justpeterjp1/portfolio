@@ -2,7 +2,7 @@ import express from "express";
 import { Resend } from 'resend';
 
 const router = express.Router();
-import { Resend } from 'resend';
+
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 router.post("/", async (req, res) => {
