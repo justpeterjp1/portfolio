@@ -64,23 +64,20 @@ const Contact = () => {
   </p>
   
   <div className="icon-row slide-in-left animate-on-scroll delay-1">
-    <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer" title="Instagram">
+    <a href="https://www.instagram.com/ojo_peter_10?igsh=eTBtYm04aHRjaXhl&utm_source=qr" target="_blank" rel="noopener noreferrer" title="Instagram">
       <i className="fab fa-instagram"></i>
     </a>
-    <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+    <a href="https://linkedin.com/in/peter-ojo-ab68b8289" target="_blank" rel="noopener noreferrer" title="LinkedIn">
       <i className="fab fa-linkedin"></i>
     </a>
-    <a href="mailto:yourmail@gmail.com" title="Email">
+    <a href="mailto:oluwagbotemiojopeter10@gmail.com" title="Email">
       <i className="fas fa-envelope"></i>
     </a>
-    <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" title="GitHub">
+    <a href="https://github.com/justpeterjp1" target="_blank" rel="noopener noreferrer" title="GitHub">
       <i className="fab fa-github"></i>
     </a>
-    <a href="https://wa.me/yourwhatsappnumber" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+    <a href="https://wa.me/+2348130357142" target="_blank" rel="noopener noreferrer" title="WhatsApp">
       <i className="fab fa-whatsapp"></i>
-    </a>
-    <a href="https://discord.com/users/yourdiscordid" target="_blank" rel="noopener noreferrer" title="Discord">
-      <i className="fab fa-discord"></i>
     </a>
   </div>
 </div>
