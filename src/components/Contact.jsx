@@ -23,7 +23,7 @@ const Contact = () => {
     setStatus("Sending...");
 
     try {
-      const response = await fetch("https://portfolio-y1ms.onrender.com", {
+      const response = await fetch("https://portfolio-y1ms.onrender.com/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
