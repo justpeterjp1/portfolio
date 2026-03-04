@@ -63,7 +63,7 @@ const Home = () => {
         <a href="#about" className="btn-outline-cyan slide-in animate-on-scroll delay-6">
           Learn more about me
         </a>
-        <h2 className="blog-text animate-on-scroll slide-in delay-4">But that's just brief, You can check me out extensively on <a className="btn-blog" href="https://itsjustpeter.wordpress.com">My Blog</a></h2>
+        {/* <h2 className="blog-text animate-on-scroll slide-in delay-4">But that's just brief, You can check me out extensively on <a className="btn-blog" href="https://itsjustpeter.wordpress.com">My Blog</a></h2> */}
       </section>
     </div>
   );
