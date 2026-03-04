@@ -17,7 +17,7 @@ const About = () => {
               With experience in modern JavaScript frameworks, UI/UX principles, and agile development, I've worked on projects from concept to deployment — always focusing on delivering real value.
             </p>
             <div className="btn-group">
-              <a href="/resume.pdf" download className="btn-cyan">Download Resume</a>
+              <a href="/OJO_Peter_Oluwaseyi_Resume 2026.pdf" download className="btn-cyan">Download Resume</a>
               <a href="#projects" className="btn-outline-cyan">View Projects</a>
             </div>
           </div>
