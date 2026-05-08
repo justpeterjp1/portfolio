@@ -1,24 +1,25 @@
-import img1 from '../assets/Images/project4.png';
+// import img1 from '../assets/Images/project4.png';
 import img2 from '../assets/Images/Project3.png';
 import img3 from '../assets/Images/project2.png';
 import img4 from '../assets/Images/project1.png';
 import img5 from '../assets/Images/project5.png';
+import img6 from '../assets/Images/image6.jpeg'; 
 
 
 
 const projectsData = [
-  {
-    id: 1,
-    title: "TaskNest",
-    img: img1,
-    desc: "A modern task management web app with real-time updates and collaborative features.",
-    details: `TaskNest is a productivity platform that lets users organize, prioritize, and collaborate on tasks. Built with React, it features smooth animations and modular components for scalability.`,
-    tools: ["React", "CSS3", "Tailwind", "Mongodb"],
-    demo: "#",
-    github: "#",
-    designProcess: `The project began with wireframing and user flow planning to ensure intuitive navigation. Components were structured in a modular way using React and Tailwind CSS to maintain consistency and reusability.`,
-    challenges: `Implementing real-time updates without a backend was challenging, so mock APIs were used to simulate user collaboration. Styling responsiveness across various screen sizes also required careful tuning.`
-  },
+  // {
+  //   id: 1,
+  //   title: "TaskNest",
+  //   img: img1,
+  //   desc: "A modern task management web app with real-time updates and collaborative features.",
+  //   details: `TaskNest is a productivity platform that lets users organize, prioritize, and collaborate on tasks. Built with React, it features smooth animations and modular components for scalability.`,
+  //   tools: ["React", "CSS3", "Tailwind", "Mongodb"],
+  //   demo: "#",
+  //   github: "",
+  //   designProcess: `The project began with wireframing and user flow planning to ensure intuitive navigation. Components were structured in a modular way using React and Tailwind CSS to maintain consistency and reusability.`,
+  //   challenges: `Implementing real-time updates without a backend was challenging, so mock APIs were used to simulate user collaboration. Styling responsiveness across various screen sizes also required careful tuning.`
+  // },
   {
     id: 2,
     title: "DocuConvert",
@@ -68,7 +69,20 @@ const projectsData = [
   github: "https://github.com/justpeterjp1/movie-tracker",
   designProcess: `The design focused on creating a clean, card-based layout to showcase movie posters and essential details. The app’s flow was structured for smooth navigation between search, details, and favorites sections.`,
   challenges: `Integrating external movie APIs and managing asynchronous requests while maintaining fast, fluid UI updates presented challenges. Ensuring state consistency and error handling during API failures also required refinement.`
-}
+},
+ {
+  id: 6,
+  title: "NewTube",
+  img: img6,
+  desc: "A dynamic app that imitates the features of YouTube",
+  details: `NewTube is a Next.js-based web app that mimics the core functionality of YouTube, allowing users to browse, watch, and manage videos.`,
+  tools: ["Next.js", "TypeScript", "Neon"],
+  demo: "https://new-tube-wine-delta.vercel.app/",
+  github: "https://github.com/justpeterjp1/newTube",
+  designProcess: `The design focused on creating a clean, card-based layout to showcase movie posters and essential details. The app’s flow was structured for smooth navigation between auth, studio section for uploading videos, and user profiles.`,
+  challenges: `Integrating complex sql queries and managing database connections efficiently presented challenges. Handling delicate trpc prefetching procedures to ensure fast reloads and Optimizing performance while handling large volumes of video data required careful consideration.`
+},
+
 
 ];
 
