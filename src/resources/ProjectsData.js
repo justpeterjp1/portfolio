@@ -4,7 +4,7 @@ import img3 from '../assets/Images/project2.png';
 import img4 from '../assets/Images/project1.png';
 import img5 from '../assets/Images/project5.png';
 import img6 from '../assets/Images/image6.jpeg'; 
-
+import img7 from '../assets/Images/sunSage7.png';
 
 
 const projectsData = [
@@ -81,6 +81,18 @@ const projectsData = [
   github: "https://github.com/justpeterjp1/newTube",
   designProcess: `The design focused on creating a clean, card-based layout to showcase movie posters and essential details. The app’s flow was structured for smooth navigation between auth, studio section for uploading videos, and user profiles.`,
   challenges: `Integrating complex sql queries and managing database connections efficiently presented challenges. Handling delicate trpc prefetching procedures to ensure fast reloads and Optimizing performance while handling large volumes of video data required careful consideration.`
+},
+ {
+  id: 7,
+  title: "SunSage",
+  img: img7,
+  desc: "A Solar Sizing app that helps users visualize and manage their solar panel installations.",
+  details: `SunSage is a React.js-based web app that helps users visualize and manage their solar panel installations.`,
+  tools: ["React", "JavaScript", "CSS3"],
+  demo: "https://sunsage.vercel.app/",
+  github: "https://github.com/justpeterjp1/solar-sizing-tool",
+  designProcess: `The design focused on creating a user-friendly interface for visualizing solar panel configurations, giving insights and recommendations as demanded by data.`,
+  challenges: `Integrating complex solar modeling algorithms and ensuring accurate calculations as well as implementing different ways that users can interact such as casual or advanced users`
 },
 
 
